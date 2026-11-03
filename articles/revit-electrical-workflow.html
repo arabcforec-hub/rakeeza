@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>التصميم الكهربائي في Revit خطوة بخطوة | ركيزة</title>
+<meta name="description" content="خطوات عملية للتصميم الكهربائي في Revit MEP: إعدادات الكهرباء، المساحات، الإنارة والأجهزة، الأسلاك والمسارات، وجداول اللوحات.">
+<meta name="author" content="م. أحمد فتحي">
+<link rel="canonical" href="https://rakeeza.arabcreators.co/articles/revit-electrical-workflow.html">
+<meta property="og:title" content="التصميم الكهربائي في Revit خطوة بخطوة">
+<meta property="og:description" content="خطوات عملية للتصميم الكهربائي في Revit MEP: إعدادات الكهرباء، المساحات، الإنارة والأجهزة، الأسلاك والمسارات، وجداول اللوحات.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:image" content="https://rakeeza.arabcreators.co/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0493434657493022" crossorigin="anonymous"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-HG5QMLFTK1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HG5QMLFTK1');</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://rakeeza.arabcreators.co/"}, {"@type": "ListItem", "position": 2, "name": "المقالات", "item": "https://rakeeza.arabcreators.co/articles/"}, {"@type": "ListItem", "position": 3, "name": "التصميم الكهربائي في Revit خطوة بخطوة", "item": "https://rakeeza.arabcreators.co/articles/revit-electrical-workflow.html"}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="../index.html"><svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="#052976"/><rect x="8" y="10" width="32" height="6" rx="1.6" fill="#fff"/><path d="M12.5 16h23l-3.2 3.4h-16.6z" fill="#4cc4ff"/><rect x="18.5" y="19.4" width="11" height="14.2" fill="#4cc4ff"/><rect x="21.4" y="20.6" width="1.3" height="11.8" rx=".6" fill="#052976"/><rect x="25.3" y="20.6" width="1.3" height="11.8" rx=".6" fill="#052976"/><path d="M15.5 33.6h17l2.6 4.4h-22.2z" fill="#4cc4ff"/></svg><span><b>ركيزة</b><small>مرجع المقاول في الكميات والتسعير</small></span></a>
+<button class="menu-btn" aria-expanded="false" aria-label="القائمة">القائمة</button>
+<nav><ul><li><a href="../index.html">الرئيسية</a></li><li><a href="../calculators/index.html">الحاسبات</a></li><li><a href="../library/index.html">المكتبة</a></li><li><a href="../articles/index.html" class=on>المقالات</a></li><li><a href="../templates.html">القوالب</a></li><li><a href="../search.html">بحث</a></li><li><a href="../contact.html">تواصل معنا</a></li><li><a class="cta-nav" href="../contact.html">اطلب تسعير</a></li></ul></nav>
+</div></header>
+<main>
+<div class="band blueprint"><div class="wrap"><div class="crumbs"><a href="../index.html">الرئيسية</a> / <a href="index.html">المقالات</a></div><h1>التصميم الكهربائي في Revit خطوة بخطوة</h1><p class="lead">خطوات عملية للتصميم الكهربائي في Revit MEP: إعدادات الكهرباء، المساحات، الإنارة والأجهزة، الأسلاك والمسارات، وجداول اللوحات.</p><div class="meta">م. أحمد فتحي · 2026-11-04 · مدة القراءة: دقيقة</div></div></div>
+<div class="wrap"><div class="page"><div class="cols"><div><article><p>Revit مش برنامج رسم خطوط زي AutoCAD؛ هو بيفهم إن العنصر حائط أو كشاف أو لوحة، وأي تعديل في المسقط بيظهر تلقائيًا في القطاعات والجداول والثلاثي الأبعاد. الاسم نفسه اختصار لفكرة «Instantly Revise»، وأوتوديسك اشترت البرنامج سنة 2002.</p>
+<h2>1. ابدأ من القالب والإعدادات</h2>
+<p>ابدأ مشروع جديد من قالب كهروميكانيكي، واربط النموذج المعماري (Link Revit). بعدها من قائمة Manage افتح MEP Settings ثم Electrical Settings، وظبط: تعريفات الجهد (Voltage Definitions)، وأنظمة التوزيع (Distribution Systems)، وأنواع الأسلاك (Wiring Types)، وتصنيفات الأحمال (Load Classifications)، ومعاملات الطلب (Demand Factors).</p>
+<h2>2. المساحات (Spaces)</h2>
+<p>من قائمة Analyze ضع Space في كل غرفة. المساحة بتحمل معلومات المكان اللي بتُستخدم في حساب الأحمال والإنارة والتكييف، وتسميتها صح بتطلع الجداول منظمة.</p>
+<h2>3. الإنارة والأجهزة</h2>
+<p>ضع وحدات الإنارة (Lighting Fixtures) والأجهزة (Electrical Devices) زي المقابس والمفاتيح، واختار العائلات (Families) المناسبة من مكتبة المشروع. عائلات المكتبة الجاهزة بتوفر وقت كبير بدل رسم كل عنصر.</p>
+<h2>4. الدوائر واللوحات</h2>
+<p>حدد العناصر واعمل منها دائرة (Power أو Lighting) ووصّلها باللوحة المناسبة. Revit بيجمع الأحمال على اللوحة تلقائيًا، وتقدر تطلع جدول اللوحة (Panel Schedule) بالأحمال والقواطع.</p>
+<h2>5. الأسلاك والمسارات</h2>
+<p>من تبويب Systems ارسم الأسلاك (Wire) بين الكشافات، وحوامل الكابلات (Cable Tray) والمواسير (Conduit)، مع مراعاة الإعدادات اللي حددتها في Electrical Settings لرموز الخط الواحد والخطين.</p>
+<h2>6. الجداول والمراجعة</h2>
+<p>اطلع جداول الأجهزة واللوحات والكميات من Schedules، وراجع التداخلات مع التكييف والسباكة قبل الطباعة.</p>
+<div class="note">الحسابات الكهربائية النهائية (المقاطع، هبوط الجهد، القواطع) يعتمدها مهندس الكهرباء حسب الكود المعتمد، وRevit أداة تنظيم ورسم وحصر.</div>
+<h2>المرجع</h2><p>كتاب شرح الريفيت للكهرباء، تأليف م. عمر سليم، أحد أوائل الكتب العربية في شرح Revit MEP.</p>
+<p>اقرأ أيضًا: <a href="cad-to-revit-workflow.html">من AutoCAD إلى Revit</a> و<a href="electrical-load-estimate.html">تقدير الأحمال الكهربائية للفيلا</a>.</p>
+</article><div class="cta"><p>تحتاج تسعير مشروع كامل أو جدول كميات معتمد؟<small>فريق المبدعون العرب يجهزه لك من المخططات، بتحليل سعر لكل بند.</small></p>
+<a class="btn" href="../contact.html">اطلب عرض سعر</a></div></div>
+<aside><div class="card"><h3>حاسبات مفيدة</h3><a href="../calculators/concrete.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+  
+  <path d="M3 21l18 0" />
+  <path d="M9 8l1 0" />
+  <path d="M9 12l1 0" />
+  <path d="M9 16l1 0" />
+  <path d="M14 8l1 0" />
+  <path d="M14 12l1 0" />
+  <path d="M14 16l1 0" />
+  <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+</svg>الخرسانة والأسمنت</a><a href="../calculators/blocks.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+  
+  <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+  <path d="M4 8h16" />
+  <path d="M20 12h-16" />
+  <path d="M4 16h16" />
+  <path d="M9 4v4" />
+  <path d="M14 8v4" />
+  <path d="M8 12v4" />
+  <path d="M16 12v4" />
+  <path d="M11 16v4" />
+</svg>البلوك والمونة</a><a href="../calculators/rebar.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+  
+  <path d="M3 8h18" />
+  <path d="M3 16h18" />
+  <path d="M8 3v18" />
+  <path d="M16 3v18" />
+</svg>أوزان الحديد</a><a href="../calculators/finish.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+  
+  <path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
+  <path d="M19 6h1a2 2 0 0 1 2 2a5 5 0 0 1 -5 5l-5 0v2" />
+  <path d="M10 15m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+</svg>اللياسة والدهان</a><a href="../calculators/tiles.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+  
+  <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+  <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+  <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+  <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+</svg>البلاط والسيراميك</a><a href="../calculators/earth.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+  
+  <path d="M17 4l3 3" />
+  <path d="M18.5 5.5l-8 8" />
+  <path d="M8.276 11.284l4.44 4.44a.968 .968 0 0 1 0 1.369l-2.704 2.704a4.108 4.108 0 0 1 -5.809 -5.81l2.704 -2.703a.968 .968 0 0 1 1.37 0z" />
+</svg>الحفر والردم</a><a href="../calculators/cost.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+  
+  <path d="M4 3m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+  <path d="M8 7m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z" />
+  <path d="M8 14l0 .01" />
+  <path d="M12 14l0 .01" />
+  <path d="M16 14l0 .01" />
+  <path d="M8 17l0 .01" />
+  <path d="M12 17l0 .01" />
+  <path d="M16 17l0 .01" />
+</svg>تقدير تكلفة البناء</a></div></aside>
+</div></div></div><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "التصميم الكهربائي في Revit خطوة بخطوة", "description": "خطوات عملية للتصميم الكهربائي في Revit MEP: إعدادات الكهرباء، المساحات، الإنارة والأجهزة، الأسلاك والمسارات، وجداول اللوحات.", "inLanguage": "ar", "datePublished": "2026-11-04", "dateModified": "2026-11-04", "author": {"@type": "Person", "name": "أحمد فتحي"}, "publisher": {"@type": "Organization", "name": "ركيزة"}, "mainEntityOfPage": "https://rakeeza.arabcreators.co/articles/revit-electrical-workflow.html"}</script>
+</main>
+<footer><div class="wrap">
+<div><a class="logo" href="../index.html"><svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="#052976"/><rect x="8" y="10" width="32" height="6" rx="1.6" fill="#fff"/><path d="M12.5 16h23l-3.2 3.4h-16.6z" fill="#4cc4ff"/><rect x="18.5" y="19.4" width="11" height="14.2" fill="#4cc4ff"/><rect x="21.4" y="20.6" width="1.3" height="11.8" rx=".6" fill="#052976"/><rect x="25.3" y="20.6" width="1.3" height="11.8" rx=".6" fill="#052976"/><path d="M15.5 33.6h17l2.6 4.4h-22.2z" fill="#4cc4ff"/></svg><span><b>ركيزة</b><small>مرجع المقاول في الكميات والتسعير</small></span></a><p>حاسبات كميات ومراجع تسعير للمهندسين والمقاولين في السعودية والعالم العربي. منصة من المبدعون العرب للاستشارات الهندسية.</p></div>
+<div><h4>الحاسبات</h4><ul>
+<li><a href="../calculators/concrete.html">حاسبة الخرسانة</a></li>
+<li><a href="../calculators/blocks.html">حاسبة البلوك</a></li>
+<li><a href="../calculators/rebar.html">حاسبة الحديد</a></li>
+<li><a href="../calculators/cost.html">تقدير تكلفة البناء</a></li></ul></div>
+<div><h4>الموقع</h4><ul>
+<li><a href="../about.html">من نحن</a></li>
+<li><a href="../contact.html">تواصل معنا</a></li>
+<li><a href="../privacy.html">سياسة الخصوصية</a></li>
+<li><a href="../terms.html">شروط الاستخدام</a></li></ul></div>
+<div class="legal"><span>© 2026 ركيزة، من المبدعون العرب للاستشارات الهندسية.</span><span>النتائج تقديرية للاسترشاد، والكميات النهائية من المخططات ومهندس المشروع.</span></div>
+</div></footer>
+<script src="../assets/calc.js" defer></script>
+</body>
+</html>
