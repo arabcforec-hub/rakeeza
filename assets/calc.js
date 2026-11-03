@@ -54,6 +54,20 @@
       const adh = area * 5;                         // kg per m2 typical
       return { area: fmt(area, 2), total: fmt(total, 2), count: fmt(count), boxes: fmt(up(total / box)), adh: fmt(Math.ceil(adh / 20)) };
     },
+    // Excavation and backfill: prismoidal pit with working space and side slope
+    earth(f) {
+      const D = num(f, 'd'), ws = num(f, 'ws'), sl = num(f, 'slope');
+      const bl = num(f, 'l') + 2 * ws, bw = num(f, 'w') + 2 * ws;
+      const tl = bl + 2 * sl * D, tw = bw + 2 * sl * D;
+      const A1 = bl * bw, A2 = tl * tw, Am = ((bl + tl) / 2) * ((bw + tw) / 2);
+      const exc = D / 6 * (A1 + A2 + 4 * Am);
+      const back = Math.max(0, exc - num(f, 'struct'));
+      const comp = Math.max(0.5, num(f, 'comp') / 100);
+      const bankNeed = back / comp;
+      const surplus = Math.max(0, exc - bankNeed);
+      const loose = surplus * Math.max(1, num(f, 'swell'));
+      return { exc: fmt(exc, 1), back: fmt(back, 1), need: fmt(bankNeed, 1), surplus: fmt(surplus, 1), loose: fmt(loose, 1), trucks: fmt(Math.ceil(loose / Math.max(1, num(f, 'truck')))) };
+    },
     // Cost estimate from user rates
     cost(f) {
       const a = num(f, 'area');
