@@ -14,9 +14,10 @@
   --paper:#0b1f3a;--card:#12294a;--amber-soft:#16355e;--shadow:none;--link:#4cc4ff;--navy:#071628}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased}
+body{margin:0;font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
 a{color:var(--link);text-decoration:none}
 a:hover{text-decoration:underline;text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
 h1,h2,h3,.logo b{font-family:var(--kufi);letter-spacing:0}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
 .ico{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
