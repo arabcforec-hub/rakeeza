@@ -168,3 +168,9 @@ footer .logo{margin-bottom:10px}
 .pfoot{margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line)}
 .price{font-family:var(--kufi);font-size:22px;color:var(--navy-2)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .price{color:var(--amber)}:root:not([data-theme="light"]) .feats .ico{color:var(--amber)}}
+
+/* library */
+.shot-big{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;max-height:520px}
+.shot-big img{width:100%;display:block}
+.dl{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:18px 0 6px}
+.dl span{color:var(--muted);font-size:14px}
