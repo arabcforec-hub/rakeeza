@@ -14,35 +14,32 @@
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 <!-- AdSense: paste the publisher script here after approval -->
 </head>
 <body>
 <header class="top"><div class="wrap">
-<a class="logo" href="../index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="4" rx="1" fill="currentColor"/><rect x="7" y="9" width="5" height="16" fill="#d98e04"/><rect x="20" y="9" width="5" height="16" fill="#d98e04"/><rect x="3" y="25" width="26" height="4" rx="1" fill="currentColor"/></svg><span>ركيزة<small>مرجع المقاول في الكميات والتسعير</small></span></a>
+<a class="logo" href="../index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#052976"/><rect x="7" y="9" width="26" height="5" rx="1.5" fill="#fff"/><rect x="16" y="14" width="8" height="15" fill="#4cc4ff"/><path d="M11 29h18l2 4H9z" fill="#4cc4ff"/><path d="M7 9l3-3h20l3 3" fill="none" stroke="#fff" stroke-width="1.6"/></svg><span><b>ركيزة</b><small>مرجع المقاول في الكميات والتسعير</small></span></a>
 <button class="menu-btn" aria-expanded="false" aria-label="القائمة">القائمة</button>
-<nav><ul><li><a href="../index.html">الرئيسية</a></li><li><a href="../calculators/index.html" class=on>الحاسبات</a></li><li><a href="../articles/index.html">المقالات</a></li><li><a href="../about.html">من نحن</a></li><li><a href="../contact.html">تواصل معنا</a></li></ul></nav>
+<nav><ul><li><a href="../index.html">الرئيسية</a></li><li><a href="../calculators/index.html" class=on>الحاسبات</a></li><li><a href="../articles/index.html">المقالات</a></li><li><a href="../about.html">من نحن</a></li><li><a href="../contact.html">تواصل معنا</a></li><li><a class="cta-nav" href="../contact.html">اطلب تسعير</a></li></ul></nav>
 </div></header>
 <main>
-<div class="wrap"><div class="crumbs"><a href="../index.html">الرئيسية</a> / <a href="index.html">الحاسبات</a> / حاسبة وزن حديد التسليح</div>
-<div class="page"><h1>حاسبة وزن حديد التسليح</h1><p class="lead">اختر القطر وأدخل طول السيخ وعدد الأسياخ.</p>
-<div class="cols"><div>
+<div class="band blueprint"><div class="wrap"><div class="crumbs"><a href="../index.html">الرئيسية</a> / <a href="index.html">الحاسبات</a></div><h1>حاسبة وزن حديد التسليح</h1><p class="lead">اختر القطر وأدخل طول السيخ وعدد الأسياخ.</p></div></div>
+<div class="wrap"><div class="page"><div class="cols"><div>
 <form class="calc" data-calc="rebar"><div class="fields"><label>القطر<select name="d"><option value="8">8 مم</option><option value="10">10 مم</option><option value="12" selected>12 مم</option><option value="14">14 مم</option><option value="16">16 مم</option><option value="18">18 مم</option><option value="20">20 مم</option><option value="22">22 مم</option><option value="25">25 مم</option><option value="28">28 مم</option><option value="32">32 مم</option></select></label><label>طول السيخ الواحد (م)<input type="number" inputmode="decimal" name="len" value="12" step="any" min="0"></label><label>عدد الأسياخ<input type="number" inputmode="decimal" name="count" value="50" step="1" min="0"></label><label>نسبة الهالك والتراكب (%)<input type="number" inputmode="decimal" name="waste" value="7" step="any" min="0"></label></div>
 <div class="result"><div class="res main"><span>الوزن الكلي كجم</span><b data-out="kg">-</b></div><div class="res"><span>الوزن بالطن</span><b data-out="ton">-</b></div><div class="res"><span>وزن المتر الطولي كجم</span><b data-out="wpm">-</b></div><div class="res"><span>أسياخ بطول 12 م</span><b data-out="bars">-</b></div></div></form>
 <div class="ad">مساحة إعلانية</div>
 <article><h2>معادلة وزن الحديد</h2><p>وزن المتر الطولي بالكيلو = القطر بالمليمتر تربيع ÷ 162. مثلًا قطر 16 مم: 16 × 16 ÷ 162 = 1.58 كجم للمتر.</p>
 <h2>جدول الأوزان</h2><div class="tbl"><table><tr><th>القطر (مم)</th><th>كجم/م</th><th>وزن سيخ 12 م (كجم)</th></tr><tr><td>8</td><td>0.395</td><td>4.74</td></tr><tr><td>10</td><td>0.617</td><td>7.41</td></tr><tr><td>12</td><td>0.889</td><td>10.67</td></tr><tr><td>14</td><td>1.210</td><td>14.52</td></tr><tr><td>16</td><td>1.580</td><td>18.96</td></tr><tr><td>18</td><td>2.000</td><td>24.00</td></tr><tr><td>20</td><td>2.469</td><td>29.63</td></tr><tr><td>22</td><td>2.988</td><td>35.85</td></tr><tr><td>25</td><td>3.858</td><td>46.30</td></tr><tr><td>28</td><td>4.840</td><td>58.07</td></tr><tr><td>32</td><td>6.321</td><td>75.85</td></tr></table></div><div class="note">نسبة الهالك تشمل أطوال التراكب والقص. ارجع لجدول تفريد الحديد في المخططات للكميات النهائية.</div></article>
-<div class="cta"><p>تحتاج تسعير مشروع كامل أو جدول كميات معتمد؟ فريق المبدعون العرب يجهزه لك.</p>
+<div class="cta"><p>تحتاج تسعير مشروع كامل أو جدول كميات معتمد؟<small>فريق المبدعون العرب يجهزه لك من المخططات، بتحليل سعر لكل بند.</small></p>
 <a class="btn" href="../contact.html">اطلب عرض سعر</a></div>
 </div>
-<aside><div class="card"><h3>حاسبات أخرى</h3>
-<a href="concrete.html">الخرسانة والأسمنت</a><a href="blocks.html">البلوك والمونة</a><a href="rebar.html">أوزان الحديد</a>
-<a href="finish.html">اللياسة والدهان</a><a href="tiles.html">البلاط والسيراميك</a><a href="cost.html">تقدير تكلفة البناء</a></div></aside>
+<aside><div class="card"><h3>حاسبات أخرى</h3><a href="concrete.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16M6 18V9l6-4 6 4v9"/><path d="M9 18v-5h6v5"/></svg>الخرسانة والأسمنت</a><a href="blocks.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="8" height="4"/><rect x="13" y="5" width="8" height="4"/><rect x="7" y="11" width="10" height="4"/><rect x="3" y="17" width="8" height="3"/><rect x="13" y="17" width="8" height="3"/></svg>البلوك والمونة</a><a href="rebar.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20L20 4M4 14L14 4M10 20L20 10"/><path d="M6 18l1 1M9 15l1 1M12 12l1 1M15 9l1 1"/></svg>أوزان الحديد</a><a href="finish.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="13" height="5" rx="1"/><path d="M17 6h2v5h-8v3"/><rect x="9.5" y="14" width="3" height="6" rx="1"/></svg>اللياسة والدهان</a><a href="tiles.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>البلاط والسيراميك</a><a href="cost.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M8 18h2M12 18h4"/></svg>تقدير تكلفة البناء</a></div></aside>
 </div></div></div>
 </main>
 <footer><div class="wrap">
-<div><h4>ركيزة</h4><p>حاسبات كميات ومراجع تسعير للمهندسين والمقاولين في السعودية والعالم العربي. منصة من المبدعون العرب للاستشارات الهندسية.</p></div>
+<div><a class="logo" href="../index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#052976"/><rect x="7" y="9" width="26" height="5" rx="1.5" fill="#fff"/><rect x="16" y="14" width="8" height="15" fill="#4cc4ff"/><path d="M11 29h18l2 4H9z" fill="#4cc4ff"/><path d="M7 9l3-3h20l3 3" fill="none" stroke="#fff" stroke-width="1.6"/></svg><span><b>ركيزة</b><small>مرجع المقاول في الكميات والتسعير</small></span></a><p>حاسبات كميات ومراجع تسعير للمهندسين والمقاولين في السعودية والعالم العربي. منصة من المبدعون العرب للاستشارات الهندسية.</p></div>
 <div><h4>الحاسبات</h4><ul>
 <li><a href="../calculators/concrete.html">حاسبة الخرسانة</a></li>
 <li><a href="../calculators/blocks.html">حاسبة البلوك</a></li>
@@ -53,7 +50,7 @@
 <li><a href="../contact.html">تواصل معنا</a></li>
 <li><a href="../privacy.html">سياسة الخصوصية</a></li>
 <li><a href="../terms.html">شروط الاستخدام</a></li></ul></div>
-<div class="legal">© 2026 ركيزة. النتائج تقديرية للاسترشاد، وتُعتمد الكميات النهائية من المخططات والمواصفات ومهندس المشروع.</div>
+<div class="legal"><span>© 2026 ركيزة، من المبدعون العرب للاستشارات الهندسية.</span><span>النتائج تقديرية للاسترشاد، والكميات النهائية من المخططات ومهندس المشروع.</span></div>
 </div></footer>
 <script src="../assets/calc.js" defer></script>
 </body>

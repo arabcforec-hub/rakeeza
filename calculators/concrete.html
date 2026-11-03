@@ -14,20 +14,19 @@
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 <!-- AdSense: paste the publisher script here after approval -->
 </head>
 <body>
 <header class="top"><div class="wrap">
-<a class="logo" href="../index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="4" rx="1" fill="currentColor"/><rect x="7" y="9" width="5" height="16" fill="#d98e04"/><rect x="20" y="9" width="5" height="16" fill="#d98e04"/><rect x="3" y="25" width="26" height="4" rx="1" fill="currentColor"/></svg><span>ركيزة<small>مرجع المقاول في الكميات والتسعير</small></span></a>
+<a class="logo" href="../index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#052976"/><rect x="7" y="9" width="26" height="5" rx="1.5" fill="#fff"/><rect x="16" y="14" width="8" height="15" fill="#4cc4ff"/><path d="M11 29h18l2 4H9z" fill="#4cc4ff"/><path d="M7 9l3-3h20l3 3" fill="none" stroke="#fff" stroke-width="1.6"/></svg><span><b>ركيزة</b><small>مرجع المقاول في الكميات والتسعير</small></span></a>
 <button class="menu-btn" aria-expanded="false" aria-label="القائمة">القائمة</button>
-<nav><ul><li><a href="../index.html">الرئيسية</a></li><li><a href="../calculators/index.html" class=on>الحاسبات</a></li><li><a href="../articles/index.html">المقالات</a></li><li><a href="../about.html">من نحن</a></li><li><a href="../contact.html">تواصل معنا</a></li></ul></nav>
+<nav><ul><li><a href="../index.html">الرئيسية</a></li><li><a href="../calculators/index.html" class=on>الحاسبات</a></li><li><a href="../articles/index.html">المقالات</a></li><li><a href="../about.html">من نحن</a></li><li><a href="../contact.html">تواصل معنا</a></li><li><a class="cta-nav" href="../contact.html">اطلب تسعير</a></li></ul></nav>
 </div></header>
 <main>
-<div class="wrap"><div class="crumbs"><a href="../index.html">الرئيسية</a> / <a href="index.html">الحاسبات</a> / حاسبة كمية الخرسانة والأسمنت</div>
-<div class="page"><h1>حاسبة كمية الخرسانة والأسمنت</h1><p class="lead">أدخل أبعاد العنصر وعدده، وتظهر لك كمية الخرسانة وموادها مباشرة.</p>
-<div class="cols"><div>
+<div class="band blueprint"><div class="wrap"><div class="crumbs"><a href="../index.html">الرئيسية</a> / <a href="index.html">الحاسبات</a></div><h1>حاسبة كمية الخرسانة والأسمنت</h1><p class="lead">أدخل أبعاد العنصر وعدده، وتظهر لك كمية الخرسانة وموادها مباشرة.</p></div></div>
+<div class="wrap"><div class="page"><div class="cols"><div>
 <form class="calc" data-calc="concrete"><div class="fields"><label>الطول (م)<input type="number" inputmode="decimal" name="l" value="4" step="any" min="0"></label><label>العرض (م)<input type="number" inputmode="decimal" name="w" value="0.6" step="any" min="0"></label><label>السماكة أو العمق (م)<input type="number" inputmode="decimal" name="h" value="0.5" step="any" min="0"></label><label>عدد العناصر<input type="number" inputmode="decimal" name="n" value="1" step="1" min="0"></label><label>محتوى الأسمنت<select name="mix"><option value="300">300 كجم/م³ (نظافة وأرضيات)</option><option value="350" selected>350 كجم/م³ (إنشائية عادية)</option><option value="400">400 كجم/م³ (أعمدة وأسقف)</option></select></label><label>نسبة الهالك (%)<input type="number" inputmode="decimal" name="waste" value="5" step="any" min="0"></label></div>
 <div class="result"><div class="res main"><span>حجم الخرسانة م³</span><b data-out="vol">-</b></div><div class="res"><span>أكياس أسمنت 50 كجم</span><b data-out="bags">-</b></div><div class="res"><span>رمل م³</span><b data-out="sand">-</b></div><div class="res"><span>بحص م³</span><b data-out="gravel">-</b></div><div class="res"><span>ماء لتر</span><b data-out="water">-</b></div></div></form>
 <div class="ad">مساحة إعلانية</div>
@@ -37,16 +36,14 @@
 <div class="note">في الخرسانة الجاهزة تطلب الحجم بالمتر المكعب من المصنع مباشرة حسب رتبة الخرسانة المطلوبة في المخططات، ولا تحتاج حساب الأسمنت والركام.</div>
 <h2>نسب الهالك المقترحة</h2>
 <div class="tbl"><table><tr><th>العنصر</th><th>الهالك</th></tr><tr><td>قواعد ولبشة</td><td>3% إلى 5%</td></tr><tr><td>أعمدة وجسور</td><td>5%</td></tr><tr><td>أسقف وبلاطات</td><td>3% إلى 5%</td></tr><tr><td>خلط يدوي في الموقع</td><td>7% إلى 10%</td></tr></table></div></article>
-<div class="cta"><p>تحتاج تسعير مشروع كامل أو جدول كميات معتمد؟ فريق المبدعون العرب يجهزه لك.</p>
+<div class="cta"><p>تحتاج تسعير مشروع كامل أو جدول كميات معتمد؟<small>فريق المبدعون العرب يجهزه لك من المخططات، بتحليل سعر لكل بند.</small></p>
 <a class="btn" href="../contact.html">اطلب عرض سعر</a></div>
 </div>
-<aside><div class="card"><h3>حاسبات أخرى</h3>
-<a href="concrete.html">الخرسانة والأسمنت</a><a href="blocks.html">البلوك والمونة</a><a href="rebar.html">أوزان الحديد</a>
-<a href="finish.html">اللياسة والدهان</a><a href="tiles.html">البلاط والسيراميك</a><a href="cost.html">تقدير تكلفة البناء</a></div></aside>
+<aside><div class="card"><h3>حاسبات أخرى</h3><a href="concrete.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16M6 18V9l6-4 6 4v9"/><path d="M9 18v-5h6v5"/></svg>الخرسانة والأسمنت</a><a href="blocks.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="8" height="4"/><rect x="13" y="5" width="8" height="4"/><rect x="7" y="11" width="10" height="4"/><rect x="3" y="17" width="8" height="3"/><rect x="13" y="17" width="8" height="3"/></svg>البلوك والمونة</a><a href="rebar.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20L20 4M4 14L14 4M10 20L20 10"/><path d="M6 18l1 1M9 15l1 1M12 12l1 1M15 9l1 1"/></svg>أوزان الحديد</a><a href="finish.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="13" height="5" rx="1"/><path d="M17 6h2v5h-8v3"/><rect x="9.5" y="14" width="3" height="6" rx="1"/></svg>اللياسة والدهان</a><a href="tiles.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>البلاط والسيراميك</a><a href="cost.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M8 18h2M12 18h4"/></svg>تقدير تكلفة البناء</a></div></aside>
 </div></div></div>
 </main>
 <footer><div class="wrap">
-<div><h4>ركيزة</h4><p>حاسبات كميات ومراجع تسعير للمهندسين والمقاولين في السعودية والعالم العربي. منصة من المبدعون العرب للاستشارات الهندسية.</p></div>
+<div><a class="logo" href="../index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#052976"/><rect x="7" y="9" width="26" height="5" rx="1.5" fill="#fff"/><rect x="16" y="14" width="8" height="15" fill="#4cc4ff"/><path d="M11 29h18l2 4H9z" fill="#4cc4ff"/><path d="M7 9l3-3h20l3 3" fill="none" stroke="#fff" stroke-width="1.6"/></svg><span><b>ركيزة</b><small>مرجع المقاول في الكميات والتسعير</small></span></a><p>حاسبات كميات ومراجع تسعير للمهندسين والمقاولين في السعودية والعالم العربي. منصة من المبدعون العرب للاستشارات الهندسية.</p></div>
 <div><h4>الحاسبات</h4><ul>
 <li><a href="../calculators/concrete.html">حاسبة الخرسانة</a></li>
 <li><a href="../calculators/blocks.html">حاسبة البلوك</a></li>
@@ -57,7 +54,7 @@
 <li><a href="../contact.html">تواصل معنا</a></li>
 <li><a href="../privacy.html">سياسة الخصوصية</a></li>
 <li><a href="../terms.html">شروط الاستخدام</a></li></ul></div>
-<div class="legal">© 2026 ركيزة. النتائج تقديرية للاسترشاد، وتُعتمد الكميات النهائية من المخططات والمواصفات ومهندس المشروع.</div>
+<div class="legal"><span>© 2026 ركيزة، من المبدعون العرب للاستشارات الهندسية.</span><span>النتائج تقديرية للاسترشاد، والكميات النهائية من المخططات ومهندس المشروع.</span></div>
 </div></footer>
 <script src="../assets/calc.js" defer></script>
 </body>
